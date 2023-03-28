@@ -5,7 +5,7 @@ The pytorch code of hyperspectral image super-resolution method MSDformer.
 * Python 3.6.13
 * Pytorch 1.8.
 
-## Data preparation
+## Preparation
 To get the training set, validation set and testing set, refer to SSPSR to download the mcodes for cropping the hyperspectral image.
 
 ## Training
