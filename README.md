@@ -1,2 +1,2 @@
 # MSDformer
-hyperspectral image super-resolution
+The pytorch code of hyperspectral image super-resolution MSDformer
