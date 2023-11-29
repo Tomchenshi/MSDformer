@@ -72,7 +72,7 @@ class MSAMG(nn.Module):
             xi = self.IG(xi)
             xi = self.spc[g](xi)
             xi = self.middle[g](xi)
-            y[:, sta_ind:end_ind, :, :] = xi
+            y[:, sta_ind:end_ind, :, :] += xi
             channel_counter[sta_ind:end_ind] = channel_counter[sta_ind:end_ind] + 1
         y = y / channel_counter.unsqueeze(1).unsqueeze(2)
         y = self.tail(y)
